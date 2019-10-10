@@ -1,0 +1,29 @@
+Selecione todos os campos da tabela.
+
+Base > Formatação Condicional > Nova Regra
+
+Selecionar opção: “Utilizar uma fórmula para determinar as células a serem formatadas”
+
+Dentro de “Formatar valores em que esta fórmula seja verdadeira” escrever a seguinte fórmula:
+
+=E(LIN()=CÉL("lin");COL()=CÉL("col"))
+
+Selecione “Formatar” e escolha a cor da célula central destacada.
+
+Repetir o procedimento, mas desta vez utilizar a seguinte formula.
+
+=OU(LIN()=CÉL("lin");COL()=CÉL("col"))
+
+Selecione “Formatar” e escolha a cor da linha/coluna referente a célula central destacada.
+
+Depois de criadas as duas regras.
+
+Pressionar ALT + F11
+
+No lado esquerdo de um duplo clique na folha que deseja editar, abrirá uma janela, copie o seguinte código.
+
+Private Sub Worksheet_SelectionChange(ByVal Target As Range)
+Application.Calculate
+End Sub
+
+Clique em salvar, clique em Não e salve com o formato: Livro com Permissão para Macros do Excel (*.xlsm)
