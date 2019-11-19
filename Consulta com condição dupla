@@ -1,0 +1,3 @@
+=ÍNDICE(F2:F7;CORRESP(F14&F15;C2:C7&E2:E7;0))
+
+=ÍNDICE("área retornada";CORRESP("critério 01"&"critério 02";"matriz critério 01"&"matriz critério 02";"0 para correspondência exata"))
